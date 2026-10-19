@@ -61,7 +61,7 @@ O **Food** é um site responsivo para restaurantes e lanchonetes, projetado para
 Sinta-se à vontade para contribuir! Fork o repositório, faça alterações e envie um Pull Request.
 
 ## 👤 Autor
-Arquitetado por **[Larissa Kich]**, replicado e feito por **[Iasmin Angel]**.
+Feito por **[Iasmin Angel]**.
 
 ## © Licença
 Este projeto está sob a licença MIT. Sinta-se livre para usar e modificar.

@@ -1,0 +1,103 @@
+#steps {
+  background-color: var(--color-neutral-1);
+  color: var(--color-neutral-0);
+  border-radius: 48px;
+  margin: 0 4%;
+  position: relative;
+  overflow: hidden;
+}
+
+#steps::before,
+#steps::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--color-primary-5);
+  opacity: 0.08;
+}
+
+#steps::before { width: 320px; height: 320px; top: -120px; left: -80px; }
+#steps::after { width: 220px; height: 220px; bottom: -80px; right: -40px; }
+
+#steps .section-subtitle {
+  color: var(--color-neutral-0);
+}
+
+#steps .highlight::after {
+  opacity: 0.25;
+}
+
+#steps_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.step {
+  position: relative;
+  text-align: center;
+  padding: 40px 28px;
+  border-radius: var(--radius-lg);
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.step:hover {
+  background-color: rgba(255, 203, 69, 0.08);
+  transform: translateY(-6px);
+}
+
+.step-number {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.06);
+}
+
+.step-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary-5), var(--color-primary-6));
+  color: var(--color-neutral-1);
+  font-size: 1.8rem;
+  margin-bottom: 22px;
+  box-shadow: 0 0 0 10px rgba(255, 203, 69, 0.12);
+}
+
+.step h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 900px) {
+  #steps {
+    margin: 0 16px;
+    border-radius: 32px;
+  }
+
+  #steps_list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #steps {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

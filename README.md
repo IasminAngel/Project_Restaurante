@@ -6,42 +6,56 @@
 O **Food** é um site responsivo para restaurantes e lanchonetes, projetado para exibir o cardápio, depoimentos de clientes e facilitar a interação com os visitantes por meio de redes sociais e botões de ação.
 
 ## 🔍 Funcionalidades
-- ✔ Navegação responsiva com menu mobile
-- ✔ Exibição do cardápio com imagens e preços
-- ✔ Seção de depoimentos de clientes
-- ✔ Botões de interação para redes sociais e contato
-- ✔ Efeitos de animação com ScrollReveal
+- ✔ Navegação responsiva com header fixo (efeito vidro) e menu mobile animado
+- ✔ Hero com cards flutuantes, estatísticas e botão de ligação
+- ✔ Seção de diferenciais do restaurante
+- ✔ Cardápio com filtro por categoria, favoritos e carrinho com contador
+- ✔ Passo a passo "Como funciona"
+- ✔ Depoimentos de clientes
+- ✔ Banner de pedido via WhatsApp com cupom
+- ✔ Seção de contato (endereço, horário, telefone)
+- ✔ Rodapé completo com newsletter e redes sociais
+- ✔ Notificações (toast), botão "voltar ao topo" e animações com ScrollReveal
 
 ## 🔧 Tecnologias Utilizadas
 - **HTML5** - Estrutura da página
-- **CSS3** - Estilização
-- **JavaScript** - Interações dinâmicas
-- **jQuery** - Facilita manipulação do DOM
+- **CSS3** - Estilização (variáveis, grid, flexbox, animações)
+- **JavaScript + jQuery** - Interações dinâmicas
 - **ScrollReveal** - Animações de rolagem
-- **Font Awesome e Bootstrap Icons** - Ícones visuais
+- **Font Awesome** - Ícones
+- **Google Fonts** - Poppins e Pacifico
 
 ## 🛠 Como Rodar o Projeto
-1. Baixe ou clone este repositório:
+1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/food-site.git
+   git clone https://github.com/IasminAngel/Project_Restaurante.git
    ```
 2. Abra o arquivo `index.html` no navegador.
 
 ## 📚 Estrutura de Arquivos
 ```
 /
-├── index.html          # Arquivo principal
-├── style.css           # Estilos CSS
+├── index.html              # Página principal
 ├── assets/
-│   ├── img/            # Imagens do site
-│   ├── icons/          # Ícones adicionais
-│   └── wave.svg        # Elemento visual do rodapé
-└── README.md           # Documentação do projeto
+│   ├── css/
+│   │   ├── style.css       # Variáveis, base, botões e utilitários
+│   │   ├── header.css      # Cabeçalho e menu mobile
+│   │   ├── home.css        # Hero
+│   │   ├── features.css    # Diferenciais
+│   │   ├── menu.css        # Cardápio
+│   │   ├── steps.css       # Como funciona
+│   │   ├── testimonials.css# Depoimentos
+│   │   ├── contact.css     # Banner de pedido e contato
+│   │   └── footer.css      # Rodapé
+│   ├── js/
+│   │   └── script.js       # Interações
+│   └── img/                # Imagens, favicon e wave do rodapé
+└── README.md
 ```
 
 ## 💡 Personalização
-- Edite o arquivo `style.css` para alterar cores e espaçamentos.
-- Substitua as imagens na pasta `assets/img/` para personalização.
+- Altere as cores nas variáveis do `:root` em `assets/css/style.css`.
+- Substitua as imagens em `assets/img/`.
 
 ## ✨ Contribuição
 Sinta-se à vontade para contribuir! Fork o repositório, faça alterações e envie um Pull Request.

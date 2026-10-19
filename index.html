@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Food — comida fresca, saborosa e entregue quentinha na sua porta. Confira nosso cardápio e peça agora."
+    />
+    <meta name="theme-color" content="#ffcb45" />
+    <title>Food | O sabor vai até você</title>
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/features.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/steps.css" />
+    <link rel="stylesheet" href="assets/css/testimonials.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+      <nav id="navbar">
+        <a href="#home" id="nav_logo">
+          <span class="logo-icon"><i class="fa-solid fa-burger"></i></span>
+          <span class="logo-text">food</span>
+        </a>
+
+        <ul id="nav_list">
+          <li class="nav-item active"><a href="#home">Início</a></li>
+          <li class="nav-item"><a href="#features">Sobre</a></li>
+          <li class="nav-item"><a href="#menu">Cardápio</a></li>
+          <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+          <li class="nav-item"><a href="#contact">Contato</a></li>
+        </ul>
+
+        <div id="nav_actions">
+          <button class="cart-button" aria-label="Carrinho">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="cart_count">0</span>
+          </button>
+          <a href="#menu" class="btn-default" id="nav_cta">
+            Peça agora <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button id="mobile_btn" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item"><a href="#home">Início</a></li>
+          <li class="nav-item"><a href="#features">Sobre</a></li>
+          <li class="nav-item"><a href="#menu">Cardápio</a></li>
+          <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+          <li class="nav-item"><a href="#contact">Contato</a></li>
+        </ul>
+        <a href="#menu" class="btn-default">Peça agora</a>
+      </div>
+    </header>
+
+    <main id="content">
+      <!-- ================= HERO ================= -->
+      <section id="home">
+        <div class="shape"></div>
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
+
+        <div id="cta">
+          <span class="badge">
+            <i class="fa-solid fa-fire"></i> Entrega grátis acima de R$ 50
+          </span>
+
+          <h1 class="title">
+            O sabor vai até <span class="highlight">você</span>
+          </h1>
+
+          <p class="description">
+            Pratos preparados na hora com ingredientes frescos e selecionados.
+            Do nosso fogão direto para a sua mesa, quentinho e em até 30
+            minutos.
+          </p>
+
+          <div id="cta_buttons">
+            <a href="#menu" class="btn-default btn-lg">
+              Ver cardápio <i class="fa-solid fa-utensils"></i>
+            </a>
+
+            <a href="tel:+5551923433243" id="phone_button">
+              <span class="phone-icon"><i class="fa-solid fa-phone"></i></span>
+              <span>
+                <small>Peça por telefone</small>
+                (51) 92343-3243
+              </span>
+            </a>
+          </div>
+
+          <ul id="stats">
+            <li>
+              <strong>15k+</strong>
+              <span>Clientes felizes</span>
+            </li>
+            <li>
+              <strong>4.9 <i class="fa-solid fa-star"></i></strong>
+              <span>Avaliação média</span>
+            </li>
+            <li>
+              <strong>30min</strong>
+              <span>Tempo de entrega</span>
+            </li>
+          </ul>
+        </div>
+
+        <div id="banner">
+          <img src="assets/img/hero.png" alt="Pratos saudáveis e coloridos" />
+
+          <div class="floating-card card-delivery">
+            <span class="floating-icon"><i class="fa-solid fa-motorcycle"></i></span>
+            <div>
+              <strong>Entrega rápida</strong>
+              <small>Em até 30 minutos</small>
+            </div>
+          </div>
+
+          <div class="floating-card card-rating">
+            <div class="avatars">
+              <img src="assets/img/avatar.png" alt="" />
+              <span class="avatar-initial" style="--bg: #ff8a3d">L</span>
+              <span class="avatar-initial" style="--bg: #4caf7a">R</span>
+            </div>
+            <div>
+              <strong>4.9 <i class="fa-solid fa-star"></i></strong>
+              <small>+2.000 avaliações</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FEATURES ================= -->
+      <section id="features">
+        <div class="feature">
+          <span class="feature-icon"><i class="fa-solid fa-leaf"></i></span>
+          <h4>Ingredientes frescos</h4>
+          <p>Selecionados diariamente com produtores locais.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon"><i class="fa-solid fa-truck-fast"></i></span>
+          <h4>Entrega expressa</h4>
+          <p>Seu pedido chega quentinho em até 30 minutos.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon"><i class="fa-solid fa-award"></i></span>
+          <h4>Chef premiado</h4>
+          <p>Receitas exclusivas criadas por quem entende.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon"><i class="fa-solid fa-shield-heart"></i></span>
+          <h4>Pagamento seguro</h4>
+          <p>Pix, cartão ou dinheiro, do jeito que preferir.</p>
+        </div>
+      </section>
+
+      <!-- ================= MENU ================= -->
+      <section id="menu">
+        <div class="section-header">
+          <span class="section-title">Cardápio</span>
+          <h2 class="section-subtitle">Nossos pratos <span class="highlight">especiais</span></h2>
+          <p class="section-description">
+            Escolha uma categoria e descubra o seu próximo prato favorito.
+          </p>
+        </div>
+
+        <div id="menu_filters">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-border-all"></i> Todos
+          </button>
+          <button class="filter-btn" data-filter="bowls">
+            <i class="fa-solid fa-bowl-food"></i> Bowls
+          </button>
+          <button class="filter-btn" data-filter="lanches">
+            <i class="fa-solid fa-burger"></i> Lanches
+          </button>
+          <button class="filter-btn" data-filter="saudaveis">
+            <i class="fa-solid fa-seedling"></i> Saudáveis
+          </button>
+          <button class="filter-btn" data-filter="massas">
+            <i class="fa-solid fa-bowl-rice"></i> Massas
+          </button>
+        </div>
+
+        <div id="dishes">
+          <article class="dish" data-category="bowls">
+            <button class="dish-heart" aria-label="Favoritar">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <span class="dish-tag">Mais pedido</span>
+            <div class="dish-image-wrapper">
+              <img src="assets/img/dish.png" class="dish-image" alt="Poke bowl de frango" />
+            </div>
+            <h3 class="dish-title">Poke de Frango Crocante</h3>
+            <p class="dish-description">
+              Arroz japonês, frango empanado, tomate cereja, cebola roxa e molho tarê.
+            </p>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4><small>R$</small> 32,90</h4>
+              <button class="btn-default add-to-cart" aria-label="Adicionar ao carrinho">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="dish" data-category="lanches">
+            <button class="dish-heart" aria-label="Favoritar">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <div class="dish-image-wrapper">
+              <img src="assets/img/dish2.png" class="dish-image" alt="Sanduíche grelhado" />
+            </div>
+            <h3 class="dish-title">Toast Grelhado da Casa</h3>
+            <p class="dish-description">
+              Pão artesanal na chapa, frango desfiado, queijo derretido e salada fresca.
+            </p>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span>(320+)</span>
+            </div>
+            <div class="dish-price">
+              <h4><small>R$</small> 24,90</h4>
+              <button class="btn-default add-to-cart" aria-label="Adicionar ao carrinho">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="dish" data-category="saudaveis">
+            <button class="dish-heart" aria-label="Favoritar">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <span class="dish-tag tag-green">Vegano</span>
+            <div class="dish-image-wrapper">
+              <img src="assets/img/dish3.png" class="dish-image" alt="Smoothie bowl verde" />
+            </div>
+            <h3 class="dish-title">Green Bowl Tropical</h3>
+            <p class="dish-description">
+              Smoothie de kiwi e espinafre com morango, coco fresco e sementes.
+            </p>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>(410+)</span>
+            </div>
+            <div class="dish-price">
+              <h4><small>R$</small> 27,50</h4>
+              <button class="btn-default add-to-cart" aria-label="Adicionar ao carrinho">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="dish" data-category="massas">
+            <button class="dish-heart" aria-label="Favoritar">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <span class="dish-tag tag-red">Picante</span>
+            <div class="dish-image-wrapper">
+              <img src="assets/img/dish4.png" class="dish-image" alt="Yakissoba de camarão" />
+            </div>
+            <h3 class="dish-title">Yakissoba de Camarão</h3>
+            <p class="dish-description">
+              Macarrão salteado no wok com camarões, legumes crocantes e toque de pimenta.
+            </p>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>(280+)</span>
+            </div>
+            <div class="dish-price">
+              <h4><small>R$</small> 38,90</h4>
+              <button class="btn-default add-to-cart" aria-label="Adicionar ao carrinho">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= STEPS ================= -->
+      <section id="steps">
+        <div class="section-header">
+          <span class="section-title">Como funciona</span>
+          <h2 class="section-subtitle">Pedir é fácil, <span class="highlight">rápido</span> e gostoso</h2>
+        </div>
+
+        <div id="steps_list">
+          <div class="step">
+            <span class="step-number">01</span>
+            <span class="step-icon"><i class="fa-solid fa-list-check"></i></span>
+            <h4>Escolha seu prato</h4>
+            <p>Navegue pelo cardápio e monte o seu pedido do seu jeito.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">02</span>
+            <span class="step-icon"><i class="fa-solid fa-fire-burner"></i></span>
+            <h4>A gente prepara</h4>
+            <p>Nossa cozinha prepara tudo na hora, com muito carinho.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">03</span>
+            <span class="step-icon"><i class="fa-solid fa-house-chimney"></i></span>
+            <h4>Receba em casa</h4>
+            <p>Seu pedido chega quentinho e pronto para saborear.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section id="testimonials">
+        <div id="chef_wrapper">
+          <img src="assets/img/chef.png" id="testimonial_chef" alt="Nossa chef" />
+        </div>
+
+        <div id="testimonials_content">
+          <span class="section-title">Depoimentos</span>
+          <h2 class="section-subtitle">O que os clientes <span class="highlight">falam</span> sobre nós</h2>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <i class="fa-solid fa-quote-right quote"></i>
+              <img src="assets/img/avatar.png" class="feedback-avatar" alt="Mariana Barros" />
+              <div class="feedback-content">
+                <div class="feedback-header">
+                  <div>
+                    <strong>Mariana Barros</strong>
+                    <small>Cliente desde 2023</small>
+                  </div>
+                  <span class="feedback-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <p>
+                  "O poke de frango é simplesmente perfeito! Chegou quentinho,
+                  muito bem embalado e antes do horário previsto. Virei cliente
+                  fiel."
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <i class="fa-solid fa-quote-right quote"></i>
+              <span class="feedback-avatar avatar-initial" style="--bg: #ff8a3d">L</span>
+              <div class="feedback-content">
+                <div class="feedback-header">
+                  <div>
+                    <strong>Lucas Ferreira</strong>
+                    <small>Cliente desde 2024</small>
+                  </div>
+                  <span class="feedback-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <p>
+                  "Melhor yakissoba da cidade, sem exagero. Porção generosa,
+                  tempero na medida e o atendimento pelo WhatsApp é nota 10."
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <i class="fa-solid fa-quote-right quote"></i>
+              <span class="feedback-avatar avatar-initial" style="--bg: #4caf7a">R</span>
+              <div class="feedback-content">
+                <div class="feedback-header">
+                  <div>
+                    <strong>Renata Souza</strong>
+                    <small>Cliente desde 2022</small>
+                  </div>
+                  <span class="feedback-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  </span>
+                </div>
+                <p>
+                  "Opções saudáveis que realmente têm sabor! O green bowl é o
+                  meu café da manhã preferido nos fins de semana."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn-default btn-lg">
+            Ver mais avaliações <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ================= CTA BANNER ================= -->
+      <section id="order_banner">
+        <div class="order-banner-inner">
+          <div class="order-banner-text">
+            <h2>Bateu a fome? <br />Peça agora pelo WhatsApp!</h2>
+            <p>Use o cupom <strong>PRIMEIRA10</strong> e ganhe 10% de desconto no seu primeiro pedido.</p>
+          </div>
+          <a href="https://wa.me/5551923433243" target="_blank" rel="noopener" class="btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Fazer pedido
+          </a>
+          <img src="assets/img/dish.png" class="order-banner-img img-1" alt="" />
+          <img src="assets/img/dish3.png" class="order-banner-img img-2" alt="" />
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact">
+        <div class="section-header">
+          <span class="section-title">Contato</span>
+          <h2 class="section-subtitle">Venha nos <span class="highlight">visitar</span></h2>
+        </div>
+
+        <div id="contact_cards">
+          <div class="contact-card">
+            <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <h4>Endereço</h4>
+            <p>Av. dos Sabores, 1234<br />Centro — Porto Alegre, RS</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+            <h4>Horário</h4>
+            <p>Seg a Sex: 11h às 23h<br />Sáb e Dom: 11h às 00h</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon"><i class="fa-solid fa-phone-volume"></i></span>
+            <h4>Telefone</h4>
+            <p><a href="tel:+5551923433243">(51) 92343-3243</a><br /><a href="mailto:contato@food.com.br">contato@food.com.br</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <img src="assets/img/wave.svg" alt="" class="footer-wave" />
+
+      <div id="footer_content">
+        <div class="footer-col footer-brand">
+          <a href="#home" id="footer_logo">
+            <span class="logo-icon"><i class="fa-solid fa-burger"></i></span>
+            <span class="logo-text">food</span>
+          </a>
+          <p>Comida de verdade, feita com carinho e entregue com rapidez. O sabor vai até você!</p>
+          <div class="social-media-buttons">
+            <a href="https://wa.me/5551923433243" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#features">Sobre</a></li>
+            <li><a href="#menu">Cardápio</a></li>
+            <li><a href="#testimonials">Avaliações</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <ul>
+            <li>Seg a Sex: 11h – 23h</li>
+            <li>Sáb e Dom: 11h – 00h</li>
+            <li>Feriados: 12h – 22h</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Novidades</h4>
+          <p>Receba promoções e lançamentos em primeira mão.</p>
+          <form id="newsletter">
+            <input type="email" placeholder="Seu e-mail" required aria-label="E-mail" />
+            <button type="submit" aria-label="Inscrever"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div id="footer_bottom">
+        <span id="copyright">&copy; <span id="year">2026</span> Food — Feito com <i class="fa-solid fa-heart"></i> por Iasmin Angel</span>
+        <span>Todos os direitos reservados.</span>
+      </div>
+    </footer>
+
+    <button id="back_to_top" aria-label="Voltar ao topo">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

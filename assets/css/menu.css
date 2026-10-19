@@ -1,0 +1,240 @@
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu_filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid transparent;
+  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-2);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: var(--color-primary-5);
+  color: var(--color-neutral-1);
+}
+
+.filter-btn.active {
+  background-color: var(--color-neutral-1);
+  color: var(--color-primary-5);
+}
+
+#dishes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.dish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  gap: 12px;
+  padding: 28px 22px 24px;
+  background-color: var(--color-neutral-0);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+}
+
+.dish::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  width: 140%;
+  aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-primary-2) 0%, transparent 65%);
+  z-index: 0;
+  transition: transform 0.5s ease;
+}
+
+.dish > * {
+  position: relative;
+  z-index: 1;
+}
+
+.dish:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.dish:hover::before {
+  transform: translateX(-50%) scale(1.15);
+}
+
+.dish.hide {
+  display: none;
+}
+
+.dish-heart {
+  position: absolute !important;
+  border: none;
+  background-color: var(--color-primary-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--color-neutral-1);
+  width: 64px;
+  height: 64px;
+  right: -8px;
+  top: -8px;
+  padding: 8px 8px 0 0;
+  border-radius: 0 0 0 36px;
+  cursor: pointer;
+  z-index: 2 !important;
+  transition: background-color var(--transition);
+}
+
+.dish-heart i {
+  transition: transform var(--transition);
+}
+
+.dish-heart:hover i {
+  transform: scale(1.2);
+}
+
+.dish-heart.liked {
+  background-color: var(--color-accent);
+  color: var(--color-neutral-0);
+}
+
+.dish-heart.liked i {
+  animation: heartbeat 0.45s ease;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+}
+
+.dish-tag {
+  position: absolute !important;
+  top: 18px;
+  left: 18px;
+  background-color: var(--color-neutral-1);
+  color: var(--color-primary-5);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.dish-tag.tag-green {
+  background-color: #e3f6ea;
+  color: #2e8b57;
+}
+
+.dish-tag.tag-red {
+  background-color: #ffe4dc;
+  color: #d9480f;
+}
+
+.dish-image-wrapper {
+  width: 190px;
+  height: 190px;
+  margin: 16px 0 8px;
+}
+
+.dish-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 18px rgba(0, 0, 0, 0.18));
+  transition: transform 0.6s ease;
+}
+
+.dish:hover .dish-image {
+  transform: rotate(18deg) scale(1.06);
+}
+
+.dish-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.dish-description {
+  color: var(--color-neutral-2);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.dish-rate {
+  color: var(--color-primary-6);
+  font-size: 0.85rem;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.dish-rate span {
+  color: var(--color-neutral-3);
+  margin-left: 6px;
+}
+
+.dish-price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  margin-top: 4px;
+  border-top: 1px dashed var(--color-primary-3);
+}
+
+.dish-price h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.dish-price h4 small {
+  font-size: 0.85rem;
+  color: var(--color-primary-6);
+}
+
+.dish-price .btn-default {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+}
+
+@media screen and (max-width: 1170px) {
+  #dishes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #dishes {
+    grid-template-columns: 1fr;
+  }
+}
